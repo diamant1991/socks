@@ -681,7 +681,9 @@ h4,
 
 h5,
 .h5 {
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px; }
 
 h6,
 .h6 {
@@ -1029,6 +1031,10 @@ body {
   display: table-cell;
   vertical-align: middle; }
 
+.table-top {
+  display: table-cell;
+  vertical-align: top; }
+
 .wrapper {
   min-height: 100%;
   padding-bottom: 446px; }
@@ -1336,6 +1342,16 @@ img {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   outline: 0; }
+  .count-field_card {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #bbbbbb;
+    -webkit-box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.07);
+    margin-left: 5px;
+    margin-right: 5px; }
+    .count-field_card_basket {
+      width: 50px; }
 
 .btn {
   display: inline-block;
@@ -1344,7 +1360,10 @@ img {
   padding: 6px 10px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  font-weight: bold; }
+  font-weight: bold;
+  border: 0;
+  outline: 0;
+  cursor: pointer; }
   .btn-purple {
     color: #fff;
     background: #d070a9; }
@@ -1670,9 +1689,53 @@ img {
   .tab-item.active {
     display: block; }
 
-.card__img {
-  text-align: center;
-  height: 350px; }
+.card {
+  margin-bottom: 70px; }
+  .card__img {
+    text-align: center;
+    height: 350px; }
+  .card__table {
+    border-top: 1px solid #e1e1e1;
+    margin-bottom: 35px; }
+    .card__table table {
+      width: 100%;
+      text-align: center; }
+    .card__table thead {
+      font-weight: bold; }
+      .card__table thead td {
+        padding: 20px 0; }
+    .card__table tbody td {
+      padding: 10px 0; }
+    .card__table td {
+      border-bottom: 1px solid #e1e1e1;
+      vertical-align: middle; }
+  .card__price {
+    margin-bottom: 50px; }
+    .card__price__prev {
+      text-decoration: line-through;
+      font-size: 18px;
+      color: #898989;
+      margin-right: 25px; }
+    .card__price__today {
+      color: #d070a9;
+      font-size: 30px;
+      font-weight: bold; }
+  .card__checkbox {
+    margin-top: -20px;
+    margin-left: 15px; }
+  .card__add {
+    text-align: right;
+    margin-bottom: 25px; }
+    .card__add .btn {
+      text-align: center; }
+  .card__description {
+    line-height: 1.5; }
+
+.status-green {
+  color: #3cb878; }
+
+.status-red {
+  color: #a12a30; }
 
 .thumb__item {
   float: left;
@@ -1680,3 +1743,172 @@ img {
   text-align: center;
   width: 33.3%;
   height: 130px; }
+
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px; }
+
+.checkbox + label {
+  cursor: pointer; }
+
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0; }
+
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 21px;
+  background: url(../img/checkbox.png) no-repeat; }
+
+.checkbox:checked + label:before {
+  background: url(../img/checkbox-active.png) no-repeat; }
+
+.checkbox_order + label {
+  padding-left: 25px !important; }
+  .checkbox_order + label:before {
+    top: -1px !important; }
+
+.commentary {
+  padding-top: 40px;
+  border-top: 1px solid #e1e1e1;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 40px; }
+  .commentary-form__content {
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 60px; }
+  .commentary__item {
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e1e1; }
+    .commentary__item p {
+      margin-bottom: 0; }
+  .commentary__left {
+    width: 140px; }
+  .commentary__name {
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .commentary__date {
+    color: #898989; }
+  .commentary__inner {
+    background: #ebebeb;
+    padding: 15px;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 20px; }
+    .commentary__inner:before {
+      content: "";
+      width: 33px;
+      height: 28px;
+      position: absolute;
+      z-index: 2;
+      left: -40px;
+      top: 0;
+      background: url(../img/com-arrow.png) no-repeat; }
+    .commentary__inner__left {
+      width: 100px; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 35px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 0;
+  border: 1px solid #bbbbbb;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.07); }
+  .form-control_cupon {
+    width: 190px;
+    display: inline-block;
+    vertical-align: middle; }
+
+.form-group {
+  margin-bottom: 15px; }
+  .form-group_right {
+    text-align: right; }
+
+textarea.form-control {
+  height: 120px;
+  resize: none;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.also-buy {
+  padding-top: 40px;
+  border-top: 1px solid #e1e1e1; }
+
+.basket {
+  margin-bottom: 60px; }
+  .basket__cupon {
+    margin-bottom: 20px; }
+    .basket__cupon__title {
+      margin-right: 15px; }
+  .basket__name {
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  .basket__link {
+    text-decoration: underline;
+    color: #d070a9; }
+  .basket__table {
+    width: 100%; }
+    .basket__table thead {
+      font-weight: bold; }
+    .basket__table td {
+      vertical-align: middle;
+      padding: 15px 0;
+      border-bottom: 1px solid #e1e1e1;
+      text-align: center; }
+      .basket__table td:nth-child(2) {
+        text-align: left; }
+    .basket__table tbody td {
+      padding: 25px 0; }
+  .basket__price {
+    font-size: 14px; }
+    .basket__price span {
+      color: #d070a9;
+      font-weight: bold; }
+  .basket__prev-price {
+    text-decoration: line-through;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #737373; }
+  .basket__total {
+    text-align: right;
+    margin-top: 30px; }
+    .basket__total__item {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 15px; }
+      .basket__total__item span {
+        color: #d070a9; }
+
+.delete-btn {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: url(../img/delete.png) no-repeat; }
+
+.order__right {
+  padding-left: 85px; }
+
+.order__checkbox__item {
+  margin-bottom: 15px; }
+  .order__checkbox__item_green {
+    margin: 95px 0; }
+    .order__checkbox__item_green label {
+      color: #3cb878;
+      font-weight: bold; }

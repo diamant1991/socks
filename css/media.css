@@ -1,0 +1,6 @@
+@media (min-width: 1200px) {
+  .card__carousel {
+    width: 48%;
+    padding-right: 40px; }
+  .card__info {
+    width: 52%; } }
