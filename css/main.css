@@ -699,6 +699,85 @@ strong {
 i {
   font-style: italic; }
 
+.text-block {
+  line-height: 1.7; }
+  .text-block p, .text-block ul, .text-block ol, .text-block table, .text-block h2, .text-block h3, .text-block h4, .text-block h5 {
+    margin-bottom: 30px; }
+  .text-block a {
+    color: #d070a9;
+    text-decoration: underline; }
+    .text-block a:hover {
+      color: #6dcff6; }
+  .text-block h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #363636; }
+  .text-block ul li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px; }
+    .text-block ul li:last-child {
+      margin-bottom: 0; }
+    .text-block ul li:before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      width: 21px;
+      height: 23px;
+      left: 0;
+      top: 5px;
+      background: url(../img/galka-big.png) no-repeat; }
+  .text-block ol {
+    counter-reset: list; }
+    .text-block ol li {
+      position: relative;
+      margin-bottom: 20px; }
+      .text-block ol li:last-child {
+        margin-bottom: 0; }
+      .text-block ol li:before {
+        counter-increment: list;
+        content: counter(list) ". ";
+        font-weight: bold;
+        color: #d070a9;
+        padding-right: 5px; }
+  .text-block blockquote {
+    position: relative;
+    padding-left: 30px;
+    color: #898989;
+    margin-bottom: 30px; }
+    .text-block blockquote:before {
+      content: "";
+      width: 22px;
+      height: 19px;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      background: url(../img/q-before.png) no-repeat; }
+    .text-block blockquote:after {
+      content: "";
+      width: 23px;
+      height: 19px;
+      display: inline-block;
+      position: relative;
+      top: 5px;
+      background: url(../img/q-after.png) no-repeat; }
+  .text-block img[align="right"] {
+    margin-left: 15px; }
+  .text-block img[align="left"] {
+    margin-right: 15px; }
+  .text-block table {
+    width: 100%; }
+    .text-block table thead td {
+      background: #ebebeb;
+      border: 1px solid #ebebeb; }
+    .text-block table td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 15px 10px; }
+    .text-block table tbody td {
+      border: 1px solid #ebebeb; }
+
 .modal-open {
   overflow: hidden; }
 
@@ -1912,3 +1991,45 @@ textarea.form-control {
     .order__checkbox__item_green label {
       color: #3cb878;
       font-weight: bold; }
+
+.icon-bar {
+  width: 30px;
+  height: 3px;
+  background: #6dcff6; }
+  .icon-bar + .icon-bar {
+    margin-top: 5px; }
+
+.navbar-toggle {
+  cursor: pointer; }
+
+.mobile-panel {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  color: #fff;
+  background: #6dcff6;
+  width: 100%;
+  padding: 15px;
+  display: none; }
+  .mobile-panel__menu {
+    margin-bottom: 20px; }
+    .mobile-panel__menu li {
+      margin-bottom: 10px; }
+    .mobile-panel__menu a {
+      color: #fff;
+      text-decoration: underline; }
+  .mobile-panel__category li {
+    margin-bottom: 10px; }
+  .mobile-panel__category a {
+    text-transform: uppercase;
+    color: #fff; }
+
+.close-panel {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  top: 5px;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer; }

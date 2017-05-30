@@ -6,6 +6,9 @@ if($('.product__carousel__item').length){
     dots: false,
     responsive:{
         0:{
+            items:1
+        },
+        450:{
             items:2
         },
         600:{
