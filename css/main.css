@@ -2006,12 +2006,19 @@ textarea.form-control {
   position: absolute;
   z-index: 10;
   right: 0;
-  top: 0;
+  top: -100%;
   color: #fff;
   background: #6dcff6;
   width: 100%;
   padding: 15px;
-  display: none; }
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+  .mobile-panel.active {
+    top: 0;
+    opacity: 1;
+    visibility: visible; }
   .mobile-panel__menu {
     margin-bottom: 20px; }
     .mobile-panel__menu li {
@@ -2033,3 +2040,27 @@ textarea.form-control {
   font-size: 24px;
   line-height: 1;
   cursor: pointer; }
+
+select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  -webkit-appearance: none;
+  background-image: url("../img/select-drop.png");
+  background-position: 98% center;
+  background-repeat: no-repeat;
+  line-height: 1em;
+  outline: 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -ms-appearance: none;
+  appearance: none !important;
+  border: 1px solid #bbbbbb;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+select::-ms-expand {
+  display: none; }

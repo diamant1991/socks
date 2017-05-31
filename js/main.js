@@ -36,3 +36,9 @@ if(('#card-carousel').length){
     controls: false
   });
 }
+$('.navbar-toggle').click(function() {
+  $('.mobile-panel').addClass('active')
+});
+$('.close-panel').click(function() {
+  $('.mobile-panel').removeClass('active')
+});

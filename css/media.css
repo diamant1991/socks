@@ -11,6 +11,19 @@
     width: 52%; } }
 
 @media (max-width: 991px) {
+  .order__right {
+    padding-left: 0;
+    margin-top: 20px; }
+  .order__checkbox__item_green {
+    margin: 30px 0; }
+  .basket__table td:first-child {
+    display: none; }
+  .card__info {
+    margin-top: 20px; }
+  .pagination .filter__item {
+    position: relative;
+    top: 0;
+    margin-top: 20px; }
   .top-panel__menu {
     width: 250px; }
     .top-panel__menu li {
@@ -31,6 +44,10 @@
     font-size: 14px; }
   h1, .h1 {
     font-size: 30px; }
+  h2, .h2 {
+    font-size: 26px; }
+  .text-block h3 {
+    font-size: 22px; }
   .footer__top__content {
     display: block; }
     .footer__top__content:after {
@@ -58,8 +75,34 @@
     display: none; }
   .item-title {
     margin-bottom: 25px; }
+  .content {
+    padding-bottom: 30px; }
+  .text-block ul li {
+    padding-left: 30px; }
+  .filter__item {
+    display: block;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px; }
+  .filter .pull-right {
+    float: none !important; }
   h1, .h1 {
     font-size: 24px; }
+  h2, .h2 {
+    font-size: 22px; }
+  .text-block h3 {
+    font-size: 20px; }
+  .card__price__today {
+    font-size: 24px; }
+  .card__price__prev {
+    margin-right: 10px;
+    font-size: 16px; }
+  .commentary__inner__left {
+    width: 85px; }
+  .card {
+    margin-bottom: 30px; }
+  .commentary__left {
+    width: 110px; }
   .header__basket__btn {
     border-color: #d070a9;
     background: #d070a9;
@@ -91,4 +134,37 @@
   .col-exs-6 {
     width: 50%; }
   .col-exs-12 {
-    width: 100%; } }
+    width: 100%; }
+  .basket-table-item {
+    overflow: auto; }
+  .basket__table {
+    table-layout: fixed;
+    width: 600px; }
+  h1, .h1 {
+    font-size: 20px; }
+  h2, .h2 {
+    font-size: 18px; }
+  .text-block h3 {
+    font-size: 16px; }
+  .commentary__left {
+    display: block;
+    width: 100%; }
+  .commentary__left {
+    display: block; }
+  .commentary__inner:before {
+    content: none; }
+  .card__img {
+    height: 250px; }
+  .thumb__item {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .card__table {
+    font-size: 12px; }
+  .card__price {
+    margin-bottom: 20px; }
+  .card__price__today {
+    font-size: 20px; }
+  .card__price__prev {
+    font-size: 14px; }
+  .text-block table {
+    display: none; } }

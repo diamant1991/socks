@@ -160,79 +160,81 @@
         </div>
         <h1 class="page-title">Заголовок страницы</h1>
         <div class="basket">
-          <table class="basket__table">
-            <thead>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Размер</td>
-                <td>Стоимость</td>
-                <td>Кол-во</td>
-                <td>Общая стоимость</td>
-                <td>Удалить</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="http://placehold.it/125x95" alt="">
-                </td>
-                <td>
-                  <div class="basket__name">AB8040A</div>
-                  <a href="#" class="basket__link">Кроссовки для мальчика Bi&Ki</a>
-                </td>
-                <td>
-                  28 
-                </td>
-                <td>
-                  <div class="basket__price"><span>969</span> руб.</div> 
-                  <div class="basket__prev-price"> 1050 руб. </div>
-                </td>
-                <td>
-                  <div class="product__size__count middle">
-                    <div class="count-plus middle">+</div>
-                    <input type="text" class="count-field count-field_card count-field_card_basket middle">
-                    <div class="count-minus middle">-</div>
-                  </div>
-                </td>
-                <td>
-                  <div class="basket__price"><span>969</span> руб.</div> 
-                </td>
-                <td>
-                  <a href="#" class="delete-btn"></a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="http://placehold.it/125x95" alt="">
-                </td>
-                <td>
-                  <div class="basket__name">AB8040A</div>
-                  <a href="#" class="basket__link">Кроссовки для мальчика Bi&Ki</a>
-                </td>
-                <td>
-                  28 
-                </td>
-                <td>
-                  <div class="basket__price"><span>969</span> руб.</div> 
-                  <div class="basket__prev-price"> 1050 руб. </div>
-                </td>
-                <td>
-                  <div class="product__size__count middle">
-                    <div class="count-plus middle">+</div>
-                    <input type="text" class="count-field count-field_card count-field_card_basket middle">
-                    <div class="count-minus middle">-</div>
-                  </div>
-                </td>
-                <td>
-                  <div class="basket__price"><span>969</span> руб.</div> 
-                </td>
-                <td>
-                  <a href="#" class="delete-btn"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="basket-table-item">
+            <table class="basket__table">
+              <thead>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Размер</td>
+                  <td>Стоимость</td>
+                  <td>Кол-во</td>
+                  <td>Общая стоимость</td>
+                  <td>Удалить</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="http://placehold.it/125x95" alt="">
+                  </td>
+                  <td>
+                    <div class="basket__name">AB8040A</div>
+                    <a href="#" class="basket__link">Кроссовки для мальчика Bi&Ki</a>
+                  </td>
+                  <td>
+                    28 
+                  </td>
+                  <td>
+                    <div class="basket__price"><span>969</span> руб.</div> 
+                    <div class="basket__prev-price"> 1050 руб. </div>
+                  </td>
+                  <td>
+                    <div class="product__size__count middle">
+                      <div class="count-plus middle">+</div>
+                      <input type="text" class="count-field count-field_card count-field_card_basket middle">
+                      <div class="count-minus middle">-</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="basket__price"><span>969</span> руб.</div> 
+                  </td>
+                  <td>
+                    <a href="#" class="delete-btn"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="http://placehold.it/125x95" alt="">
+                  </td>
+                  <td>
+                    <div class="basket__name">AB8040A</div>
+                    <a href="#" class="basket__link">Кроссовки для мальчика Bi&Ki</a>
+                  </td>
+                  <td>
+                    28 
+                  </td>
+                  <td>
+                    <div class="basket__price"><span>969</span> руб.</div> 
+                    <div class="basket__prev-price"> 1050 руб. </div>
+                  </td>
+                  <td>
+                    <div class="product__size__count middle">
+                      <div class="count-plus middle">+</div>
+                      <input type="text" class="count-field count-field_card count-field_card_basket middle">
+                      <div class="count-minus middle">-</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="basket__price"><span>969</span> руб.</div> 
+                  </td>
+                  <td>
+                    <a href="#" class="delete-btn"></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div class="basket__total">
             <div class="basket__cupon">
               <div class="middle basket__cupon__title">Ввод купона</div>
@@ -267,7 +269,13 @@
                   <input type="text" class="form-control" placeholder="Город">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Адрес">
+                  <div class="select-item">
+                    <select name="" id="">
+                      <option value="">Адрес</option>
+                      <option value="">Значение 2</option>
+                      <option value="">Значение 3</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="form-group">
                   <textarea class="form-control" placeholder="Комментарий"></textarea>
