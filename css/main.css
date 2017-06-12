@@ -1374,6 +1374,8 @@ img {
   .product__carousel {
     padding-left: 50px;
     padding-right: 50px; }
+    .product__carousel .owl-carousel .owl-stage-outer {
+      padding-bottom: 50px; }
     .product__carousel .item {
       padding: 2px; }
     .product__carousel .owl-prev {
@@ -1389,8 +1391,8 @@ img {
     position: relative; }
     .product__item:hover {
       border-color: #6dcff6;
-      -webkit-box-shadow: 0px 0px 0px 2px #6dcff6;
-      box-shadow: 0px 0px 0px 2px #6dcff6; }
+      -webkit-box-shadow: 0px 0px 0px 1px #6dcff6;
+      box-shadow: 0px 0px 0px 1px #6dcff6; }
   .product__img {
     height: 120px; }
   .product__name {
@@ -1709,6 +1711,9 @@ img {
   padding-left: 20px;
   padding-bottom: 20px;
   height: 335px; }
+  .catalog__block_main {
+    padding-left: 0;
+    padding-bottom: 0; }
   .catalog__block:hover .catalog__item {
     z-index: 2;
     border-color: #6dcff6;
